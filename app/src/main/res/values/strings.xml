@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Crunch Time 2</string>
+    <string-array name="workouts">
+        <item>Pushups</item>
+        <item>Situps</item>
+        <item>JumpingJacks</item>
+        <item>Jogging</item>
+    </string-array>
+    <color name="blue">#ff0000ff</color>
+</resources>
