@@ -18,8 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
-        android:layout_alignParentStart="true"
-        android:backgroundTint="#7580a3" />
+        android:backgroundTint="#7580a3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
         android:id="@+id/button"
         android:background="#2e3448"
         android:textColor="#ffffff"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/radioGroup"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -73,8 +74,8 @@
         android:id="@+id/textView"
         android:textColor="#f4f1f1"
         android:textAlignment="textStart"
-        android:layout_alignTop="@+id/pushupImage"
-        android:layout_alignEnd="@+id/pushupImage" />
+        android:layout_above="@+id/situpView"
+        android:layout_alignStart="@+id/imageView" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -84,9 +85,9 @@
         android:id="@+id/textView2"
         android:textColor="#fbfafa"
         android:textAlignment="textStart"
-        android:layout_alignTop="@+id/textView"
-        android:layout_alignEnd="@+id/situpView"
-        android:layout_marginEnd="30dp" />
+        android:layout_below="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginTop="47dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -96,9 +97,8 @@
         android:id="@+id/textView3"
         android:textColor="#ffffff"
         android:textAlignment="textStart"
-        android:layout_above="@+id/joggingImage"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="29dp" />
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/joggingImage" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,44 +108,44 @@
         android:id="@+id/textView4"
         android:textColor="#ffffff"
         android:textAlignment="textStart"
-        android:layout_alignTop="@+id/jumpingImage"
-        android:layout_alignStart="@+id/radioGroup" />
+        android:layout_above="@+id/joggingImage"
+        android:layout_toEndOf="@+id/button" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/joggingImage"
-        android:src="@drawable/jogging"
-        android:layout_below="@+id/textView4"
-        android:layout_toStartOf="@+id/button"
-        android:layout_alignEnd="@+id/textView3" />
+        android:src="@drawable/runner9"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="32dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/jumpingImage"
-        android:src="@drawable/jumpingjack"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/pushupImage"
-        android:src="@drawable/pushup"
-        android:layout_below="@+id/button"
-        android:layout_alignEnd="@+id/textView3"
-        android:layout_above="@+id/textView3" />
+        android:src="@drawable/jump11"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/situpView" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/situpView"
-        android:src="@drawable/pushup2"
-        android:layout_below="@id/textView2"
-        android:layout_alignEnd="@+id/textView4"
-        android:layout_toEndOf="@+id/button"
-        android:layout_above="@+id/textView4" />
+        android:src="@drawable/newittup"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/finalpushup"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView3" />
+
 
 </RelativeLayout>

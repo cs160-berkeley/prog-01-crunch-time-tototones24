@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
 //                Toast.makeText(getBaseContext(), "Time to convert", Toast.LENGTH_SHORT).show();
                 if (!minutes.isChecked() && !reps.isChecked()) {
-                    Toast.makeText(getBaseContext(), "Select a minutes or reps", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Select minutes or reps", Toast.LENGTH_LONG).show();
                 }
 
                 //This is where the main logic will go when it comes to converting the calories
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
                     //this is where I will check which option was pressed minutes or reps
                     if (minutes.isChecked()) {
-                        Toast.makeText(getBaseContext(), "These are pushups, you have to choose reps then run again", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(), "These are pushups, you have to choose reps then run again", Toast.LENGTH_LONG).show();
                     }
                     if (reps.isChecked()) {
                         float outPut = number * pushUpRep;
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (sp.getSelectedItem().toString().equals("Situps")){
                     if (minutes.isChecked()) {
-                        Toast.makeText(getBaseContext(), "Situps are counted by reps, not minutes, change it.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(), "Situps are counted by reps, not minutes, change it.", Toast.LENGTH_LONG).show();
                     }
                     if (reps.isChecked()) {
                         float outPut = number * sitUpRep;
@@ -136,10 +136,10 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 } else if (sp.getSelectedItem().toString().equals("JumpingJacks")) {
-//                    Toast.makeText(getBaseContext(), "was Jumping Jacks", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getBaseContext(), "was Jumping Jacks", Toast.LENGTH_LONG).show();
 
                     if (reps.isChecked()) {
-                        Toast.makeText(getBaseContext(), "You cannot check minutes for jumping jacks, change it then run it", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(), "You cannot check minutes for jumping jacks, change it then run it", Toast.LENGTH_LONG).show();
                     }
 
                     if (minutes.isChecked()) {
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } else {
                     if (reps.isChecked()) {
-                        Toast.makeText(getBaseContext(), "you cannot check reps for jogging, change it then run it again", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(), "you cannot check reps for jogging, change it then run it again", Toast.LENGTH_LONG).show();
                     }
                     if (minutes.isChecked()) {
                         float outPut = number * jogginMinute;
